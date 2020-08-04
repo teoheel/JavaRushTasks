@@ -25,9 +25,12 @@ public class OrderManager implements Observer {
                             } catch (InterruptedException ignored) {
                             }
                         }
-                        new Thread(() -> {
-                            cook.startCookingOrder(orderQueue.poll());
-                        }).start();
+                        Order order;
+                        if ((order = orderQueue.poll()) != null) {
+                            new Thread(() -> {
+                                cook.startCookingOrder(order);
+                            }).start();
+                        }
                     }
                 }
             }
