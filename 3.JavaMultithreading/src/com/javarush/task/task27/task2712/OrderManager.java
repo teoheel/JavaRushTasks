@@ -27,7 +27,7 @@ public class OrderManager implements Observer {
                         }
                         new Thread(() -> {
                             cook.startCookingOrder(orderQueue.poll());
-                        });
+                        }).start();
                     }
                 }
             }
