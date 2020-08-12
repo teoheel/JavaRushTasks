@@ -1,6 +1,7 @@
 package com.javarush.task.task27.task2712.ad;
 
 import com.javarush.task.task27.task2712.statistic.StatisticManager;
+import com.javarush.task.task27.task2712.statistic.event.NoAvailableVideoEventDataRow;
 import com.javarush.task.task27.task2712.statistic.event.VideoSelectedEventDataRow;
 
 import java.util.ArrayList;
@@ -31,14 +32,16 @@ public class AdvertisementManager {
                 .filter(advertisement -> advertisement.getHits() > 0)
                 .collect(Collectors.toList());
         makeAllAdvertisements(advertisements);
-        bestAdvertisements
-                .sort(Comparator.comparingLong(Advertisement::getAmountPerOneDisplaying)
-                        .thenComparingLong(Advertisement::getAmountPerOneSecondOfDisplaying).reversed());
-        bestAdvertisements.forEach(advertisement -> {
-            writeMessage(advertisement.toString());
-            advertisement.revalidate();
-        });
-        statisticManager.register(new VideoSelectedEventDataRow(bestAdvertisements, bestAmount, bestDuration));
+        if (bestAdvertisements != null) {
+            bestAdvertisements
+                    .sort(Comparator.comparingLong(Advertisement::getAmountPerOneDisplaying)
+                            .thenComparingLong(Advertisement::getAmountPerOneSecondOfDisplaying).reversed());
+            bestAdvertisements.forEach(advertisement -> {
+                writeMessage(advertisement.toString());
+                advertisement.revalidate();
+            });
+            statisticManager.register(new VideoSelectedEventDataRow(bestAdvertisements, bestAmount, bestDuration));
+        }
     }
 
     private int calcDuration(List<Advertisement> advertisements) {

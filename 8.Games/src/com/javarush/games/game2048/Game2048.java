@@ -190,12 +190,15 @@ public class Game2048 extends Game {
         for (int x = 0; x < SIDE; x++) {
             for (int y = 0; y < SIDE; y++) {
                 if (x > 0 && y > 0) {
-                    if (gameField[x][y] == gameField[x - 1][y] || gameField[x][y] == gameField[x][y - 1])
+                    if (gameField[x][y] == gameField[x - 1][y] || gameField[x][y] == gameField[x][y - 1]) {
                         canMove = true;
-                    break;
+                        break;
+                    }
                 } else if (x < SIDE - 1 && y < SIDE - 1) {
-                    if (gameField[x][y] == gameField[x + 1][y] || gameField[x][y] == gameField[x][y + 1])
+                    if (gameField[x][y] == gameField[x + 1][y] || gameField[x][y] == gameField[x][y + 1]) {
                         canMove = true;
+                        break;
+                    }
                 }
             }
         }

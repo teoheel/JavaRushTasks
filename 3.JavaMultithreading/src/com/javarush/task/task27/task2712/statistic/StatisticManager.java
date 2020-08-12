@@ -13,7 +13,6 @@ public class StatisticManager {
     private static volatile StatisticManager singleton;
     private final StatisticStorage statisticStorage = new StatisticStorage();
     private final Map<EventType, List<EventDataRow>> storage = statisticStorage.getStorage();
-    private final Set<Cook> cooks = new LinkedHashSet<>();
 
     private StatisticManager() {
     }
@@ -27,10 +26,6 @@ public class StatisticManager {
             }
         }
         return singleton;
-    }
-
-    public Set<Cook> getCooks() {
-        return cooks;
     }
 
     public Map<String, Double> getAdvertisementProfit() {
@@ -77,10 +72,6 @@ public class StatisticManager {
             }
         }
         return result;
-    }
-
-    public void register(Cook cook) {
-        cooks.add(cook);
     }
 
     public void register(EventDataRow data) {
