@@ -4,13 +4,6 @@
 .idea/
 .idea
 .repository/
-*.iml
-*.iws
-*.jrtc
-*.java
-*.info
-*.properties
-*.jar
 /out/
 /JavaRushPlugin.properties
 /Instruction.png
