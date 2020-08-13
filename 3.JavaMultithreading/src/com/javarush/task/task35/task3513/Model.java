@@ -4,15 +4,34 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Model {
+    private static final int FIELD_WIDTH = 4;
+    int score = 0, maxTile = 0;
     private boolean isSaveNeeded = true;
     private Stack<Integer> previousScores = new Stack<>();
     private Stack<Tile[][]> previousStates = new Stack<>();
-    private static final int FIELD_WIDTH = 4;
-    int score = 0, maxTile = 0;
+    private boolean isGameWon = false;
+
+    public void setGameWon(boolean gameWon) {
+        isGameWon = gameWon;
+    }
+
+    public void setGameLost(boolean gameLost) {
+        isGameLost = gameLost;
+    }
+
+    private boolean isGameLost = false;
     private Tile[][] gameTiles = new Tile[FIELD_WIDTH][FIELD_WIDTH];
 
     public Model() {
         resetGameTiles();
+    }
+
+    public boolean isGameWon() {
+        return isGameWon;
+    }
+
+    public boolean isGameLost() {
+        return isGameLost;
     }
 
     public Tile[][] getGameTiles() {
@@ -165,31 +184,25 @@ public class Model {
     public void randomMove() {
         int n = ((int) (Math.random() * 100)) % 4;
         switch (n) {
-            case 0: left(); break;
-            case 1: up(); break;
-            case 2: right(); break;
-            case 3: down(); break;
+            case 0:
+                left();
+                break;
+            case 1:
+                up();
+                break;
+            case 2:
+                right();
+                break;
+            case 3:
+                down();
+                break;
         }
     }
 
     private boolean compressTiles(Tile[] tiles) {
-        boolean isMoved = false;
-        int tempValue;
-        for (int i = 0; i < tiles.length - 1; i++) {
-            for (int j = i + 1; j < tiles.length; j++) {
-                Tile iTile = tiles[i];
-                Tile jTile = tiles[j];
-                if (iTile.isEmpty()) {
-                    if (!jTile.isEmpty()) {
-                        tempValue = jTile.getValue();
-                        jTile.setValue(0);
-                        iTile.setValue(tempValue);
-                        if (!isMoved) isMoved = true;
-                    }
-                }
-             }
-        }
-        return isMoved;
+        int hash = Arrays.hashCode(tiles);
+        Arrays.sort(tiles, Comparator.comparing(Tile::isEmpty));
+        return hash != Arrays.hashCode(tiles);
     }
 
     private boolean mergeTiles(Tile[] tiles) {

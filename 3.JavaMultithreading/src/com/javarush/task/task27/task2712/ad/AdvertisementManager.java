@@ -1,7 +1,6 @@
 package com.javarush.task.task27.task2712.ad;
 
 import com.javarush.task.task27.task2712.statistic.StatisticManager;
-import com.javarush.task.task27.task2712.statistic.event.NoAvailableVideoEventDataRow;
 import com.javarush.task.task27.task2712.statistic.event.VideoSelectedEventDataRow;
 
 import java.util.ArrayList;

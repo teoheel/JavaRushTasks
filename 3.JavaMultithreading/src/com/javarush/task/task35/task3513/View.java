@@ -8,16 +8,16 @@ public class View extends JPanel {
     private static final String FONT_NAME = "Arial";
     private static final int TILE_SIZE = 96;
     private static final int TILE_MARGIN = 12;
-
     private Controller controller;
-
-    boolean isGameWon = false;
-    boolean isGameLost = false;
 
     public View(Controller controller) {
         setFocusable(true);
         this.controller = controller;
         addKeyListener(controller);
+    }
+
+    private static int offsetCoors(int arg) {
+        return arg * (TILE_MARGIN + TILE_SIZE) + TILE_MARGIN;
     }
 
     @Override
@@ -33,9 +33,9 @@ public class View extends JPanel {
 
         g.drawString("Score: " + controller.getScore(), 140, 465);
 
-        if (isGameWon) {
+        if (controller.getModel().isGameWon()) {
             JOptionPane.showMessageDialog(this, "You've won!");
-        } else if (isGameLost) {
+        } else if (controller.getModel().isGameLost()) {
             JOptionPane.showMessageDialog(this, "You've lost :(");
         }
     }
@@ -61,9 +61,5 @@ public class View extends JPanel {
 
         if (value != 0)
             g.drawString(s, xOffset + (TILE_SIZE - w) / 2, yOffset + TILE_SIZE - (TILE_SIZE - h) / 2 - 2);
-    }
-
-    private static int offsetCoors(int arg) {
-        return arg * (TILE_MARGIN + TILE_SIZE) + TILE_MARGIN;
     }
 }

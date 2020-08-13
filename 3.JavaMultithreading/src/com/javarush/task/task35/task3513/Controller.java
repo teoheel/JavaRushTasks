@@ -4,13 +4,17 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class Controller extends KeyAdapter {
+    private static final int WINNING_TILE = 2048;
     private Model model;
     private View view;
-    private static final int WINNING_TILE = 2048;
 
     public Controller(Model model) {
         this.model = model;
         view = new View(this);
+    }
+
+    public Model getModel() {
+        return model;
     }
 
     public View getView() {
@@ -23,12 +27,12 @@ public class Controller extends KeyAdapter {
             resetGame();
         }
         if (!model.canMove()) {
-            view.isGameLost = true;
+            model.setGameLost(true);
         }
         if (e.getKeyCode() == KeyEvent.VK_Z) {
             model.rollback();
         }
-        if (!view.isGameLost && !view.isGameWon) {
+        if (!model.isGameLost() && !model.isGameWon()) {
             if (e.getKeyCode() == KeyEvent.VK_A) model.autoMove();
             if (e.getKeyCode() == KeyEvent.VK_R) model.randomMove();
             if (e.getKeyCode() == KeyEvent.VK_LEFT) model.left();
@@ -36,13 +40,13 @@ public class Controller extends KeyAdapter {
             if (e.getKeyCode() == KeyEvent.VK_RIGHT) model.right();
             if (e.getKeyCode() == KeyEvent.VK_DOWN) model.down();
         }
-        if (model.maxTile == WINNING_TILE) view.isGameWon = true;
+        if (model.maxTile == WINNING_TILE) model.setGameWon(true);
         view.repaint();
     }
 
     public void resetGame() {
-        view.isGameLost = false;
-        view.isGameWon = false;
+        model.setGameLost(false);
+        model.setGameWon(false);
         model.resetGameTiles();
     }
 

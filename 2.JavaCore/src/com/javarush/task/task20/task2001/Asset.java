@@ -5,6 +5,7 @@ import java.util.Objects;
 public class Asset {
     private String name;
     private double price;
+
     public Asset(String name, double price) {
         this.name = name;
         this.price = price;
