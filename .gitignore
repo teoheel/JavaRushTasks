@@ -1,6 +1,6 @@
-﻿/out
-/Instruction.png
-/JavaRushPlugin.properties
-/JavaRushTasks.iml
-/out.log
-/.idea
+﻿/out/
+*.png
+*.properties
+*.iml
+*.log
+/.idea/
