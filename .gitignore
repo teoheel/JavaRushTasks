@@ -1,6 +1,20 @@
-﻿/out/
-*.png
-*.properties
+﻿#############
+## Idea
+#############
+target/
+.idea/
+.idea
+.repository/
 *.iml
-*.log
-/.idea/
+*.iws
+*.jrtc
+*.java
+*.class
+*.info
+*.properties
+*.jar
+/out/
+/JavaRushPlugin.properties
+/Instruction.png
+/out.log
+/out.log.*
