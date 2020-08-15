@@ -23,12 +23,12 @@ public class Solution {
         MessageDigest messageDigest = MessageDigest.getInstance("MD5");
         messageDigest.update(byteArrayOutputStream.toByteArray());
 
-        //Конвертация в hex строку посчитанного md5 значения из ByteArrayOutputStream
         byte[] digest = messageDigest.digest();
         BigInteger tmp = new BigInteger(1, digest);
         StringBuilder md5HexString = new StringBuilder(tmp.toString(16));
-        while( md5HexString.length() < 32 ) //Добивка 0 до длинны в 16 байт
+        while( md5HexString.length() < 32 ) {
             md5HexString.insert(0, "0");
+        }
 
         return  md5HexString.toString().equals(md5);
     }
