@@ -17,8 +17,9 @@ public class CustomTree extends AbstractList<String> implements Cloneable, Seria
 
     @Override
     public boolean remove(Object o) {
-        if (!(o instanceof String))
+        if (!(o instanceof String)) {
             throw new UnsupportedOperationException();
+        }
 
         String remove = (String) o;
         Entry<String> removed = null;
