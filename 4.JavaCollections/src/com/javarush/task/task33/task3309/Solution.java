@@ -20,12 +20,7 @@ public class Solution {
 
             String xml = writer.toString();
 
-            if (xml.contains(tagName)) {
-                res = xml.replace("<" + tagName + ">", "<!--" + comment + "-->\n" + "<" + tagName + ">");
-            } else {
-                res = xml;
-            }
-
+            res = xml.replaceAll("<" + tagName + ">", "<!--" + comment + "-->\n" + "<" + tagName + ">");
         } catch (JAXBException e) {
             e.printStackTrace();
         }
