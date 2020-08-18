@@ -18,6 +18,6 @@ public class Shop {
 
     @Override
     public String toString() {
-        return String.format("goods:%s%s%s%d%s%.2f%s%s", System.lineSeparator(), goods.names.toString(), System.lineSeparator(), count, System.lineSeparator(), profit, System.lineSeparator(), Arrays.toString(secretData));
+        return String.format("goods:%s%s%s%d%s%.2f%s%s", System.lineSeparator(), goods.names, System.lineSeparator(), count, System.lineSeparator(), profit, System.lineSeparator(), Arrays.toString(secretData));
     }
 }
