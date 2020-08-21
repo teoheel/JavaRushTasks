@@ -21,7 +21,7 @@ public class KeyboardObserver extends Thread {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         frame.setUndecorated(true);
-        frame.setSize(400, 400);
+        frame.setSize(300, 300);
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setLayout(new GridBagLayout());
 
@@ -29,12 +29,10 @@ public class KeyboardObserver extends Thread {
         frame.setVisible(true);
 
         frame.addFocusListener(new FocusListener() {
-            @Override
             public void focusGained(FocusEvent e) {
-                //do nothing
+
             }
 
-            @Override
             public void focusLost(FocusEvent e) {
                 System.exit(0);
             }
@@ -44,11 +42,11 @@ public class KeyboardObserver extends Thread {
         frame.addKeyListener(new KeyListener() {
 
             public void keyTyped(KeyEvent e) {
-                //do nothing
+
             }
 
             public void keyReleased(KeyEvent e) {
-                //do nothing
+
             }
 
             public void keyPressed(KeyEvent e) {
