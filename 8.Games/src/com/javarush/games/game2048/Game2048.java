@@ -1,8 +1,6 @@
 package com.javarush.games.game2048;
 
-import com.javarush.engine.cell.Color;
-import com.javarush.engine.cell.Game;
-import com.javarush.engine.cell.Key;
+import com.javarush.engine.cell.*;
 
 public class Game2048 extends Game {
     private static final int SIDE = 4;
@@ -14,27 +12,38 @@ public class Game2048 extends Game {
         Color color = Color.NONE;
         if (value == 0) {
             color = Color.WHITE;
-        } else if (value == 2) {
+        }
+        else if (value == 2) {
             color = Color.VIOLET;
-        } else if (value == 4) {
+        }
+        else if (value == 4) {
             color = Color.PURPLE;
-        } else if (value == 8) {
+        }
+        else if (value == 8) {
             color = Color.BLUE;
-        } else if (value == 16) {
+        }
+        else if (value == 16) {
             color = Color.LIGHTBLUE;
-        } else if (value == 32) {
+        }
+        else if (value == 32) {
             color = Color.GREEN;
-        } else if (value == 64) {
+        }
+        else if (value == 64) {
             color = Color.LIGHTGREEN;
-        } else if (value == 128) {
+        }
+        else if (value == 128) {
             color = Color.ORANGE;
-        } else if (value == 256) {
+        }
+        else if (value == 256) {
             color = Color.PINK;
-        } else if (value == 512) {
+        }
+        else if (value == 512) {
             color = Color.ORANGERED;
-        } else if (value == 1024) {
+        }
+        else if (value == 1024) {
             color = Color.HOTPINK;
-        } else if (value == 2048) {
+        }
+        else if (value == 2048) {
             color = Color.DEEPPINK;
         }
         return color;
@@ -190,15 +199,12 @@ public class Game2048 extends Game {
         for (int x = 0; x < SIDE; x++) {
             for (int y = 0; y < SIDE; y++) {
                 if (x > 0 && y > 0) {
-                    if (gameField[x][y] == gameField[x - 1][y] || gameField[x][y] == gameField[x][y - 1]) {
+                    if (gameField[x][y] == gameField[x - 1][y] || gameField[x][y] == gameField[x][y - 1])
                         canMove = true;
-                        break;
-                    }
+                    break;
                 } else if (x < SIDE - 1 && y < SIDE - 1) {
-                    if (gameField[x][y] == gameField[x + 1][y] || gameField[x][y] == gameField[x][y + 1]) {
+                    if (gameField[x][y] == gameField[x + 1][y] || gameField[x][y] == gameField[x][y + 1])
                         canMove = true;
-                        break;
-                    }
                 }
             }
         }
@@ -209,7 +215,7 @@ public class Game2048 extends Game {
         isGameStopped = true;
         showMessageDialog(Color.WHITE, "Game over", Color.BLACK, 12);
     }
-
+    
     private void win() {
         isGameStopped = true;
         showMessageDialog(Color.WHITE, "You win!", Color.BLACK, 12);

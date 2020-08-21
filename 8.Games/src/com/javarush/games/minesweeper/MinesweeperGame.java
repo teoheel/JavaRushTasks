@@ -1,7 +1,6 @@
 package com.javarush.games.minesweeper;
 
-import com.javarush.engine.cell.Color;
-import com.javarush.engine.cell.Game;
+import com.javarush.engine.cell.*;
 
 import java.util.ArrayList;
 
@@ -60,8 +59,8 @@ public class MinesweeperGame extends Game {
         int left = Math.max(gameObject.x - 1, 0);
         int right = Math.min(gameObject.x + 1, SIDE - 1);
 
-        for (int y = top; y <= bottom; y++) {
-            for (int x = left; x <= right; x++) {
+        for(int y = top; y <= bottom; y++) {
+            for(int x = left; x <= right; x++) {
                 if (gameObject.x != x || gameObject.y != y) {
                     list.add(gameField[y][x]);
                 }

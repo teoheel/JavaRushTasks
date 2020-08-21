@@ -1,8 +1,6 @@
 package com.javarush.games.moonlander;
 
-import com.javarush.engine.cell.Color;
-import com.javarush.engine.cell.Game;
-import com.javarush.engine.cell.Key;
+import com.javarush.engine.cell.*;
 
 public class MoonLanderGame extends Game {
     public static final int WIDTH = 64;
@@ -111,15 +109,9 @@ public class MoonLanderGame extends Game {
     @Override
     public void onKeyReleased(Key key) {
         switch (key) {
-            case UP:
-                isUpPressed = false;
-                break;
-            case RIGHT:
-                isRightPressed = false;
-                break;
-            case LEFT:
-                isLeftPressed = false;
-                break;
+            case UP: isUpPressed = false; break;
+            case RIGHT: isRightPressed = false; break;
+            case LEFT: isLeftPressed = false; break;
         }
     }
 

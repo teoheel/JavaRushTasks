@@ -1,18 +1,18 @@
 package com.javarush.games.snake;
 
-import com.javarush.engine.cell.Color;
-import com.javarush.engine.cell.Game;
-
+import com.javarush.engine.cell.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Snake {
-    private static final String HEAD_SIGN = "\uD83D\uDC7E";
-    private static final String BODY_SIGN = "\u26AB";
+public class Snake{
     public int x;
     public int y;
+
     public boolean isAlive = true;
     private Direction direction = Direction.LEFT;
+    private static final String HEAD_SIGN = "\uD83D\uDC7E";
+    private static final String BODY_SIGN = "\u26AB";
+
     private List<GameObject> snakeParts = new ArrayList<>();
 
     public Snake(int x, int y) {
@@ -37,10 +37,8 @@ public class Snake {
         if (direction == Direction.UP && this.direction == Direction.DOWN) return;
         if (direction == Direction.RIGHT && this.direction == Direction.LEFT) return;
         if (direction == Direction.DOWN && this.direction == Direction.UP) return;
-        if ((this.direction == Direction.LEFT || this.direction == Direction.RIGHT) && snakeParts.get(0).x == snakeParts.get(1).x)
-            return;
-        if ((this.direction == Direction.UP || this.direction == Direction.DOWN) && snakeParts.get(0).y == snakeParts.get(1).y)
-            return;
+        if ((this.direction == Direction.LEFT || this.direction == Direction.RIGHT) && snakeParts.get(0).x == snakeParts.get(1).x) return;
+        if ((this.direction == Direction.UP || this.direction == Direction.DOWN) && snakeParts.get(0).y == snakeParts.get(1).y) return;
         this.direction = direction;
     }
 
@@ -90,18 +88,10 @@ public class Snake {
     public GameObject createNewHead() {
         GameObject gameObject = null;
         switch (direction) {
-            case LEFT:
-                gameObject = new GameObject(snakeParts.get(0).x - 1, snakeParts.get(0).y);
-                break;
-            case DOWN:
-                gameObject = new GameObject(snakeParts.get(0).x, snakeParts.get(0).y + 1);
-                break;
-            case RIGHT:
-                gameObject = new GameObject(snakeParts.get(0).x + 1, snakeParts.get(0).y);
-                break;
-            case UP:
-                gameObject = new GameObject(snakeParts.get(0).x, snakeParts.get(0).y - 1);
-                break;
+            case LEFT: gameObject = new GameObject(snakeParts.get(0).x - 1, snakeParts.get(0).y); break;
+            case DOWN: gameObject = new GameObject(snakeParts.get(0).x, snakeParts.get(0).y + 1); break;
+            case RIGHT: gameObject = new GameObject(snakeParts.get(0).x + 1, snakeParts.get(0).y); break;
+            case UP: gameObject = new GameObject(snakeParts.get(0).x, snakeParts.get(0).y - 1); break;
         }
         return gameObject;
     }

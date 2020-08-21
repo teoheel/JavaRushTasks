@@ -1,7 +1,6 @@
 package com.javarush.games.moonlander;
 
-import com.javarush.engine.cell.Color;
-import com.javarush.engine.cell.Game;
+import com.javarush.engine.cell.*;
 
 public class GameObject {
     public double x;
@@ -19,7 +18,7 @@ public class GameObject {
     }
 
     public void draw(Game game) {
-        if (matrix == null) {
+        if(matrix == null) {
             return;
         }
 

@@ -4,7 +4,6 @@ import com.javarush.engine.cell.Game;
 import com.javarush.games.spaceinvaders.Direction;
 import com.javarush.games.spaceinvaders.ShapeMatrix;
 import com.javarush.games.spaceinvaders.SpaceInvadersGame;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,10 +14,6 @@ public class EnemyFleet {
     private List<EnemyShip> ships;
     private Direction direction = Direction.RIGHT;
 
-    public EnemyFleet() {
-        createShips();
-    }
-
     private void createShips() {
         ships = new ArrayList<>();
         for (int x = 0; x < COLUMNS_COUNT; x++) {
@@ -27,6 +22,10 @@ public class EnemyFleet {
             }
         }
         ships.add(new Boss(STEP * COLUMNS_COUNT / 2 - ShapeMatrix.BOSS_ANIMATION_FIRST.length / 2 - 1, 5));
+    }
+
+    public EnemyFleet() {
+        createShips();
     }
 
     private double getSpeed() {

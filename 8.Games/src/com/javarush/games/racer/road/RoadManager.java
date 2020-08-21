@@ -3,7 +3,6 @@ package com.javarush.games.racer.road;
 import com.javarush.engine.cell.Game;
 import com.javarush.games.racer.PlayerCar;
 import com.javarush.games.racer.RacerGame;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -24,15 +23,9 @@ public class RoadManager {
     private RoadObject createRoadObject(RoadObjectType type, int x, int y) {
         RoadObject roadObject = null;
         switch (type) {
-            case THORN:
-                roadObject = new Thorn(x, y);
-                break;
-            case DRUNK_CAR:
-                roadObject = new MovingCar(x, y);
-                break;
-            default:
-                roadObject = new Car(type, x, y);
-                break;
+            case THORN: roadObject = new Thorn(x, y); break;
+            case DRUNK_CAR: roadObject = new MovingCar(x, y); break;
+            default: roadObject = new Car(type, x, y); break;
         }
         return roadObject;
     }

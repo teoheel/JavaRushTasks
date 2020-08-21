@@ -4,8 +4,8 @@ import com.javarush.games.spaceinvaders.Direction;
 import com.javarush.games.spaceinvaders.ShapeMatrix;
 
 public class Bullet extends GameObject {
-    public boolean isAlive = true;
     private int dy;
+    public boolean isAlive = true;
 
     public Bullet(double x, double y, Direction direction) {
         super(x, y);

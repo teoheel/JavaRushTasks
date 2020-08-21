@@ -8,13 +8,39 @@ import java.util.List;
 public class RoadObject extends GameObject {
     public RoadObjectType type;
     public int speed;
-
+    
     public RoadObject(RoadObjectType type, int x, int y) {
         super(x, y);
         this.type = type;
         this.matrix = getMatrix(type);
         this.width = matrix[0].length;
         this.height = matrix.length;
+    }
+
+    /**
+     * Метод, отвечающий за передвижение препятствия. У препятствия может быть своя скорость и дополнительная,
+     * которая зависит от скорости движения игрока.
+     */
+    public void move(int boost, List<RoadObject> roadObjects) {
+        this.y += boost;
+    }
+
+    /**
+     * Проверяет текущий объект и объект, который пришел в качестве параметра, на пересечение их изображений
+     * с учетом дистанции distance.
+     * Например, если в качестве distance передать число 12, а 2 объекта расположены друг от друга на расстоянии меньшем,
+     * чем 12 ячеек игрового поля, метод вернет true. В ином случае вернет false.
+     */
+    public boolean isCollisionWithDistance(RoadObject roadObject, int distance) {
+        if ((x - distance > roadObject.x + roadObject.width) || (x + width + distance < roadObject.x)) {
+            return false;
+        }
+
+        if ((y - distance > roadObject.y + roadObject.height) || (y + height + distance < roadObject.y)) {
+            return false;
+        }
+
+        return true;
     }
 
     /**
@@ -42,31 +68,5 @@ public class RoadObject extends GameObject {
      */
     public static int getHeight(RoadObjectType type) {
         return getMatrix(type).length;
-    }
-
-    /**
-     * Метод, отвечающий за передвижение препятствия. У препятствия может быть своя скорость и дополнительная,
-     * которая зависит от скорости движения игрока.
-     */
-    public void move(int boost, List<RoadObject> roadObjects) {
-        this.y += boost;
-    }
-
-    /**
-     * Проверяет текущий объект и объект, который пришел в качестве параметра, на пересечение их изображений
-     * с учетом дистанции distance.
-     * Например, если в качестве distance передать число 12, а 2 объекта расположены друг от друга на расстоянии меньшем,
-     * чем 12 ячеек игрового поля, метод вернет true. В ином случае вернет false.
-     */
-    public boolean isCollisionWithDistance(RoadObject roadObject, int distance) {
-        if ((x - distance > roadObject.x + roadObject.width) || (x + width + distance < roadObject.x)) {
-            return false;
-        }
-
-        if ((y - distance > roadObject.y + roadObject.height) || (y + height + distance < roadObject.y)) {
-            return false;
-        }
-
-        return true;
     }
 }
