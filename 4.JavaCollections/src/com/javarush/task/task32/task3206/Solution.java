@@ -16,19 +16,19 @@ public class Solution {
         test(solution.getProxy(Big.class));                         //true true false т.к. Big наследуется от Item
     }
 
-    public Item getProxy(Class<? extends Item> itemClass, Class<?> ... interClasses) {
-        Class<?>[] interfaces = new Class[interClasses.length + 1];
-        interfaces[0] = itemClass;
-        System.arraycopy(interClasses, 0, interfaces, 1, interClasses.length);
-
-        return (Item) Proxy.newProxyInstance(this.getClass().getClassLoader(), interfaces, new ItemInvocationHandler());
-    }
-
     private static void test(Object proxy) {
         boolean isItem = proxy instanceof Item;
         boolean isBig = proxy instanceof Big;
         boolean isSmall = proxy instanceof Small;
 
         System.out.format("%b %b %b\n", isItem, isBig, isSmall);
+    }
+
+    public Item getProxy(Class<? extends Item> itemClass, Class<?>... interClasses) {
+        Class<?>[] interfaces = new Class[interClasses.length + 1];
+        interfaces[0] = itemClass;
+        System.arraycopy(interClasses, 0, interfaces, 1, interClasses.length);
+
+        return (Item) Proxy.newProxyInstance(this.getClass().getClassLoader(), interfaces, new ItemInvocationHandler());
     }
 }

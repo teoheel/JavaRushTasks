@@ -35,7 +35,7 @@ public class Space {
     }
 
     public void sleep(int ms) {
-        
+
     }
 
     public int getHeight() {

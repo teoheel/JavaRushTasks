@@ -10,15 +10,6 @@ public class Model {
     private Stack<Integer> previousScores = new Stack<>();
     private Stack<Tile[][]> previousStates = new Stack<>();
     private boolean isGameWon = false;
-
-    public void setGameWon(boolean gameWon) {
-        isGameWon = gameWon;
-    }
-
-    public void setGameLost(boolean gameLost) {
-        isGameLost = gameLost;
-    }
-
     private boolean isGameLost = false;
     private Tile[][] gameTiles = new Tile[FIELD_WIDTH][FIELD_WIDTH];
 
@@ -30,8 +21,16 @@ public class Model {
         return isGameWon;
     }
 
+    public void setGameWon(boolean gameWon) {
+        isGameWon = gameWon;
+    }
+
     public boolean isGameLost() {
         return isGameLost;
+    }
+
+    public void setGameLost(boolean gameLost) {
+        isGameLost = gameLost;
     }
 
     public Tile[][] getGameTiles() {

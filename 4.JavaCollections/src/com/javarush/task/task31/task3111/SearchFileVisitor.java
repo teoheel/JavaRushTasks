@@ -10,17 +10,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SearchFileVisitor extends SimpleFileVisitor<Path> {
+    private final List<Path> foundFiles = new ArrayList<>();
     private String partOfName = null;
     private String partOfContent = null;
     private int minSize = 0;
     private int maxSize = 0;
-
     private boolean minSizeCheck;
     private boolean maxSizeCheck;
     private boolean partOfNameCheck;
     private boolean partOfContentCheck;
-
-    private final List<Path> foundFiles = new ArrayList<>();
 
     public SearchFileVisitor() {
     }

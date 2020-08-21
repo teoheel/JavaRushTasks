@@ -6,6 +6,7 @@ import com.javarush.games.spaceinvaders.ShapeMatrix;
 public class Boss extends EnemyShip {
     public int score = 100;
     private int frameCount = 0;
+
     public Boss(double x, double y) {
         super(x, y);
         setAnimatedView(true, ShapeMatrix.BOSS_ANIMATION_FIRST, ShapeMatrix.BOSS_ANIMATION_SECOND);

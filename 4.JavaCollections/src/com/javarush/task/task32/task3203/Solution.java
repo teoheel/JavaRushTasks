@@ -1,9 +1,7 @@
 package com.javarush.task.task32.task3203;
 
-import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.util.Arrays;
 
 /*
 Пишем стек-трейс

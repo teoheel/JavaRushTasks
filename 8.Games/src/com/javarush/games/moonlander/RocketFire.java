@@ -1,7 +1,8 @@
 package com.javarush.games.moonlander;
 
+import com.javarush.engine.cell.Game;
+
 import java.util.List;
-import com.javarush.engine.cell.*;
 
 public class RocketFire extends GameObject {
     private List<int[][]> frames;

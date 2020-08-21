@@ -1,6 +1,8 @@
 package com.javarush.games.snake;
 
-import com.javarush.engine.cell.*;
+import com.javarush.engine.cell.Color;
+import com.javarush.engine.cell.Game;
+import com.javarush.engine.cell.Key;
 
 public class SnakeGame extends Game {
     public static final int WIDTH = 15;
@@ -40,11 +42,20 @@ public class SnakeGame extends Game {
     @Override
     public void onKeyPress(Key key) {
         switch (key) {
-            case LEFT: snake.setDirection(Direction.LEFT); break;
-            case DOWN: snake.setDirection(Direction.DOWN); break;
-            case RIGHT: snake.setDirection(Direction.RIGHT); break;
-            case UP: snake.setDirection(Direction.UP); break;
-            case SPACE: if (isGameStopped) createGame();
+            case LEFT:
+                snake.setDirection(Direction.LEFT);
+                break;
+            case DOWN:
+                snake.setDirection(Direction.DOWN);
+                break;
+            case RIGHT:
+                snake.setDirection(Direction.RIGHT);
+                break;
+            case UP:
+                snake.setDirection(Direction.UP);
+                break;
+            case SPACE:
+                if (isGameStopped) createGame();
         }
     }
 

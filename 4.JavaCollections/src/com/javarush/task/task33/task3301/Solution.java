@@ -50,6 +50,7 @@ public class Solution {
     public static class Cat extends Pet {
         public int age;
         public int weight;
+
         public Cat() {
 
         }
@@ -59,6 +60,7 @@ public class Solution {
     public static class Dog extends Pet {
         public int age;
         public String owner;
+
         public Dog() {
 
         }

@@ -1,6 +1,8 @@
 package com.javarush.games.racer;
 
-import com.javarush.engine.cell.*;
+import com.javarush.engine.cell.Color;
+import com.javarush.engine.cell.Game;
+import com.javarush.engine.cell.Key;
 import com.javarush.games.racer.road.RoadManager;
 
 public class RacerGame extends Game {
@@ -94,19 +96,33 @@ public class RacerGame extends Game {
     @Override
     public void onKeyPress(Key key) {
         switch (key) {
-            case SPACE: if (isGameStopped) createGame(); break;
-            case UP: player.speed = 2; break;
-            case RIGHT: player.setDirection(Direction.RIGHT); break;
-            case LEFT: player.setDirection(Direction.LEFT); break;
+            case SPACE:
+                if (isGameStopped) createGame();
+                break;
+            case UP:
+                player.speed = 2;
+                break;
+            case RIGHT:
+                player.setDirection(Direction.RIGHT);
+                break;
+            case LEFT:
+                player.setDirection(Direction.LEFT);
+                break;
         }
     }
 
     @Override
     public void onKeyReleased(Key key) {
         switch (key) {
-            case UP: player.speed = 1; break;
-            case LEFT: if (player.getDirection() == Direction.LEFT) player.setDirection(Direction.NONE); break;
-            case RIGHT: if (player.getDirection() == Direction.RIGHT) player.setDirection(Direction.NONE); break;
+            case UP:
+                player.speed = 1;
+                break;
+            case LEFT:
+                if (player.getDirection() == Direction.LEFT) player.setDirection(Direction.NONE);
+                break;
+            case RIGHT:
+                if (player.getDirection() == Direction.RIGHT) player.setDirection(Direction.NONE);
+                break;
         }
     }
 

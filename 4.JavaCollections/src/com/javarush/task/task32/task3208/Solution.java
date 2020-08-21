@@ -33,6 +33,7 @@ public class Solution {
     // Pretend we're starting an RMI server as the SERVER_THREAD thread
     public static Thread SERVER_THREAD = new Thread(new Runnable() {
         Remote stub;
+
         @Override
         public void run() {
             //напишите тут ваш код

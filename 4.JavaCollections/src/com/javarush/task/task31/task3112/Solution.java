@@ -25,7 +25,7 @@ public class Solution {
         URL url = new URL(urlString);
         InputStream inputStream = url.openStream();
 
-        Path tmp = Files.createTempFile("temp-",".tmp");
+        Path tmp = Files.createTempFile("temp-", ".tmp");
         Files.copy(inputStream, tmp, StandardCopyOption.REPLACE_EXISTING);
 
         String fieName = urlString.substring(urlString.lastIndexOf("/"));

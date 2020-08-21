@@ -1,6 +1,8 @@
 package com.javarush.games.spaceinvaders;
 
-import com.javarush.engine.cell.*;
+import com.javarush.engine.cell.Color;
+import com.javarush.engine.cell.Game;
+import com.javarush.engine.cell.Key;
 import com.javarush.games.spaceinvaders.gameobjects.Bullet;
 import com.javarush.games.spaceinvaders.gameobjects.EnemyFleet;
 import com.javarush.games.spaceinvaders.gameobjects.PlayerShip;
@@ -48,14 +50,14 @@ public class SpaceInvadersGame extends Game {
 
     private void createStars() {
         stars = new ArrayList<>();
-        stars.add(new Star(1,1));
-        stars.add(new Star(10,10));
-        stars.add(new Star(19,19));
-        stars.add(new Star(28,28));
-        stars.add(new Star(36,36));
-        stars.add(new Star(45,45));
-        stars.add(new Star(54,54));
-        stars.add(new Star(63,63));
+        stars.add(new Star(1, 1));
+        stars.add(new Star(10, 10));
+        stars.add(new Star(19, 19));
+        stars.add(new Star(28, 28));
+        stars.add(new Star(36, 36));
+        stars.add(new Star(45, 45));
+        stars.add(new Star(54, 54));
+        stars.add(new Star(63, 63));
     }
 
     private void createGame() {

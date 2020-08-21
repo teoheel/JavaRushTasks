@@ -26,10 +26,10 @@ public class Solution {
         byte[] digest = messageDigest.digest();
         BigInteger tmp = new BigInteger(1, digest);
         StringBuilder md5HexString = new StringBuilder(tmp.toString(16));
-        while( md5HexString.length() < 32 ) {
+        while (md5HexString.length() < 32) {
             md5HexString.insert(0, "0");
         }
 
-        return  md5HexString.toString().equals(md5);
+        return md5HexString.toString().equals(md5);
     }
 }

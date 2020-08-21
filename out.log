@@ -44058,3 +44058,15 @@ java.lang.Throwable: AWT events are not allowed inside write action: java.awt.ev
 2020-08-21 22:26:27 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
 2020-08-21 22:27:27 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
 2020-08-21 22:27:27 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-08-21 22:28:27 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-08-21 22:28:27 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-08-21 22:29:27 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-08-21 22:29:27 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-08-21 22:30:27 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-08-21 22:30:27 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-08-21 22:31:27 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-08-21 22:31:27 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-08-21 22:32:27 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-08-21 22:32:27 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-08-21 22:33:27 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-08-21 22:33:27 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200

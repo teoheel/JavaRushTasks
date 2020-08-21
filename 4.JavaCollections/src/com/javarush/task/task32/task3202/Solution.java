@@ -1,7 +1,5 @@
 package com.javarush.task.task32.task3202;
 
-import com.sun.org.apache.xerces.internal.impl.io.UTF8Reader;
-
 import java.io.*;
 
 /* 

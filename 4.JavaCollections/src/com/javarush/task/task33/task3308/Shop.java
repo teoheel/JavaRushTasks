@@ -12,12 +12,12 @@ public class Shop {
     public double profit;
     public String[] secretData;
 
-    public static class Goods {
-        public List<String> names = new ArrayList<>();
-    }
-
     @Override
     public String toString() {
         return String.format("goods:%s%s%s%d%s%.2f%s%s", System.lineSeparator(), goods.names, System.lineSeparator(), count, System.lineSeparator(), profit, System.lineSeparator(), Arrays.toString(secretData));
+    }
+
+    public static class Goods {
+        public List<String> names = new ArrayList<>();
     }
 }

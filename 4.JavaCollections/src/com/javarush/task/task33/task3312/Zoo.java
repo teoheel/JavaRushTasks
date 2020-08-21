@@ -12,15 +12,15 @@ public class Zoo {
 
     @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "type")
     @JsonSubTypes({
-            @JsonSubTypes.Type(value=Cat.class, name="cat"),
-            @JsonSubTypes.Type(value=Dog.class, name="dog")
+            @JsonSubTypes.Type(value = Cat.class, name = "cat"),
+            @JsonSubTypes.Type(value = Dog.class, name = "dog")
     })
     public static class Animal {
+        public String name;
+
         public Animal(String name) {
             this.name = name;
         }
-
-        public String name;
     }
 
     @JsonTypeName
@@ -35,8 +35,8 @@ public class Zoo {
 
     @JsonTypeName
     public static class Cat extends Animal {
-        boolean likesCream;
         public int lives;
+        boolean likesCream;
 
         public Cat(String name) {
             super(name);

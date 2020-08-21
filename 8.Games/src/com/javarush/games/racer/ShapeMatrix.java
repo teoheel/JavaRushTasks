@@ -43,7 +43,7 @@ public class ShapeMatrix {
             {3, 1, 3, 3, 1, 3},
             {3, 0, 3, 3, 0, 3},
             {0, 0, 3, 3, 0, 0},
-    };    
+    };
 
     public static final int[][] PASSENGER_CAR = new int[][]{
             {0, 4, 4, 4, 4, 0},
