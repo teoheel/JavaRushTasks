@@ -4,6 +4,7 @@
 .idea/
 .idea
 .repository/
+*.log
 /out/
 /JavaRushPlugin.properties
 /Instruction.png
