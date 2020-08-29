@@ -83,7 +83,7 @@ public class Solution {
             return list;
         }
 
-        public void finish() throws InterruptedException {
+        public void finish() {
             int count = 0;
             while (queue.poll() != null) {
                 count++;
