@@ -78,7 +78,7 @@ public class Solution {
             List<PhantomReference<Monkey>> list = new ArrayList<>();
             for (int i = 1; i <= 200; i++) {
                 Monkey monkey = new Monkey();
-                list.add(new PhantomReference<>(monkey, getQueue()));
+                list.add(new PhantomReference<>(monkey, queue));
             }
             return list;
         }
