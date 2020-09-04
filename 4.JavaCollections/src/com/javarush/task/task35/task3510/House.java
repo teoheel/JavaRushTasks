@@ -7,7 +7,6 @@ import java.util.List;
 Вход воспрещен!
 */
 public class House<T> {
-
     private final List<T> RESIDENTS = new ArrayList<>();
 
     public void enter(T resident) {
