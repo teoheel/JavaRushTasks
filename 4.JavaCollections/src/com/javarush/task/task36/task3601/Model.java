@@ -3,7 +3,7 @@ package com.javarush.task.task36.task3601;
 import java.util.List;
 
 public class Model {
-    private final Service SERVICE = new Service();
+    private static final Service SERVICE = new Service();
 
     public List<String> getStringDataList() {
         return SERVICE.getData();
