@@ -15,8 +15,6 @@ public class Solution {
 
         list.addAllAbsent(collection);
 
-        for (String string : list) {
-            System.out.println(string);
-        }
+        list.forEach(System.out::println);
     }
 }
