@@ -7,6 +7,7 @@ MyMultiMap
 */
 
 public class Solution {
+    @SuppressWarnings("all")
     public static void main(String[] args) {
         Map<Integer, Integer> map = new MyMultiMap<>(3);
         for (int i = 0; i < 7; i++) {

@@ -38,6 +38,7 @@ public class MyMultiMap<K, V> extends HashMap<K, V> implements Cloneable, Serial
     }
 
     @Override
+    @SuppressWarnings("all")
     public V remove(Object key) {
         List<V> values = map.get(key);
         if (values == null) {
@@ -69,11 +70,13 @@ public class MyMultiMap<K, V> extends HashMap<K, V> implements Cloneable, Serial
     }
 
     @Override
+    @SuppressWarnings("all")
     public boolean containsKey(Object key) {
         return keySet().contains(key);
     }
 
     @Override
+    @SuppressWarnings("all")
     public boolean containsValue(Object value) {
         return values().contains(value);
     }
