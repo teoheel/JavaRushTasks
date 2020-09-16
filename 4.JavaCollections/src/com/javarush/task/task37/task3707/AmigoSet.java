@@ -34,6 +34,7 @@ public class AmigoSet<E> extends AbstractSet<E> implements Serializable, Cloneab
         return map.isEmpty();
     }
 
+    @SuppressWarnings("SuspiciousMethodCalls")
     public boolean contains(Object o) {
         return map.containsKey(o);
     }
@@ -60,6 +61,7 @@ public class AmigoSet<E> extends AbstractSet<E> implements Serializable, Cloneab
         }
     }
 
+    @SuppressWarnings("ConstantConditions")
     private void writeObject(ObjectOutputStream s) throws IOException {
         s.defaultWriteObject();
 
