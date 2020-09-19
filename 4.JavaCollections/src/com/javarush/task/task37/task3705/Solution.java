@@ -31,13 +31,13 @@ map does NOT contain the value for key = null
         return new HashMap<>();
     }
 
-    public static <V> void checkObject(Map<Object, V> map, Object key) {
+    public static <K, V> void checkObject(Map<K, V> map, K key) {
         String s1 = map.containsKey(key) ?
                 "map contains the value for key = " + key : "map does NOT contain the value for key = " + key;
         System.out.println(s1);
 
         //if value is null, it means that the map doesn't contain the value
-        Object value = map.get(key);
+        V value = map.get(key);
         String s2 = value != null ?
                 "map contains the value for key = " + key : "map does NOT contain the value for key = " + key;
         System.out.println(s2);
