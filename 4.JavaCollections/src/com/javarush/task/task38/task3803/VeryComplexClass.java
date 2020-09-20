@@ -8,6 +8,7 @@ public class VeryComplexClass {
     public void methodThrowsClassCastException() {
         Object object = Integer.valueOf(42);
         String string = (String) object;
+        System.out.println(string);
     }
 
     public void methodThrowsNullPointerException() {
@@ -17,8 +18,6 @@ public class VeryComplexClass {
     }
 
     public static void main(String[] args) {
-        VeryComplexClass veryComplexClass = new VeryComplexClass();
-//        veryComplexClass.methodThrowsClassCastException();
-        veryComplexClass.methodThrowsNullPointerException();
+
     }
 }
