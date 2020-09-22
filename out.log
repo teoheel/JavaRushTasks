@@ -47858,3 +47858,13 @@ java.lang.Throwable: AWT events are not allowed inside write action: java.awt.ev
 2020-09-22 22:00:36 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
 2020-09-22 22:00:37 INFO  ApacheHttpClient.getFilteredTasks(333) - responseCode = 200
 2020-09-22 22:00:57 INFO  ApacheHttpClient.getTaskTemplateInfo(350) - responseCode = 200
+2020-09-22 22:01:58 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-22 22:02:58 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-22 22:03:48 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-09-22 22:03:49 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2020-09-22 22:03:52 INFO  ApacheHttpClient.completed(28) - responseCode = 200
+2020-09-22 22:03:58 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-22 22:04:01 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-09-22 22:04:01 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2020-09-22 22:04:02 INFO  ApacheHttpClient.completed(28) - responseCode = 200
+2020-09-22 22:04:02 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
