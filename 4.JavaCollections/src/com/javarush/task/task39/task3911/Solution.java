@@ -16,8 +16,8 @@ public class Solution {
 
         printAllVersions(software);
 
-        System.out.printf("%1$sROLLING BACK to version %2$d%1$s", System.lineSeparator(), n);
-        System.out.printf("Was rollback done? %b%2$s%2$s", software.rollback(n), System.lineSeparator());
+        System.out.printf("%sROLLING BACK to version %d%1$s", System.lineSeparator(), n);
+        System.out.printf("Was rollback done? %b%s%2$s", software.rollback(n), System.lineSeparator());
 
         printAllVersions(software);
     }
