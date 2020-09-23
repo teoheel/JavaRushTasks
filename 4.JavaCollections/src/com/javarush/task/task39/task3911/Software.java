@@ -7,7 +7,7 @@ import java.util.Map;
 public class Software {
     int currentVersion;
 
-    private Map<Integer, String> versionHistoryMap = new LinkedHashMap<>();
+    private final Map<Integer, String> versionHistoryMap = new LinkedHashMap<>();
 
     public void addNewVersion(int version, String description) {
         if (version > currentVersion) {

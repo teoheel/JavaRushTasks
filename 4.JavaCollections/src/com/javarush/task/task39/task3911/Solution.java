@@ -14,16 +14,16 @@ public class Solution {
             software.addNewVersion(i, "Description of version #" + i);
         }
 
-        System.out.println("Printing all versions ");
-        for (Map.Entry<Integer, String> entry : software.getVersionHistoryMap().entrySet()) {
-            System.out.println(entry.getKey() + " :: " + entry.getValue());
-        }
-        System.out.println("The current version is " + software.getCurrentVersion());
+        printAllVersions(software);
 
-        System.out.println("ROLLING BACK to version " + n);
-        software.rollback(n);
+        System.out.printf("%1$sROLLING BACK to version %2$d%1$s", System.lineSeparator(), n);
+        System.out.printf("Was rollback done? %b%2$s%2$s", software.rollback(n), System.lineSeparator());
 
-        System.out.println("\nPrinting all versions ");
+        printAllVersions(software);
+    }
+
+    private static void printAllVersions(Software software) {
+        System.out.println("Printing all versions:");
         for (Map.Entry<Integer, String> entry : software.getVersionHistoryMap().entrySet()) {
             System.out.println(entry.getKey() + " :: " + entry.getValue());
         }
