@@ -17,16 +17,15 @@ public class ConsoleHelper {
     }
 
     public static String readString() throws InterruptOperationException {
+        String text = null;
         try {
-            String text = BIS.readLine();
+            text = BIS.readLine();
             if ("exit".equals(text.toLowerCase())) {
                 throw new InterruptOperationException();
             }
-
-            return text;
         } catch (IOException ignored) { //suppose it will never occur
         }
-        return null;
+        return text;
     }
 
     public static String askCurrencyCode() throws InterruptOperationException {
@@ -45,7 +44,7 @@ public class ConsoleHelper {
         while (true) {
             writeMessage(String.format(RES.getString("choose.denomination.and.count.format"), currencyCode));
             String s = readString();
-            String[] split = null;
+            String[] split;
             if (s == null || (split = s.split(" ")).length != 2) {
                 writeMessage(RES.getString("invalid.data"));
             } else {
