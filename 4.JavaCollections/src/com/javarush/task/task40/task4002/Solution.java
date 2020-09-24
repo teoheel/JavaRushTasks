@@ -13,10 +13,6 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
-/*
-Опять POST, а не GET
-*/
-
 public class Solution {
     public static void main(String[] args) throws Exception {
         Solution solution = new Solution();
