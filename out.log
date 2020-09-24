@@ -259,3 +259,36 @@
 2020-09-24 16:59:52 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
 2020-09-24 16:59:53 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
 2020-09-24 16:59:53 WARN  PluginUtil.getCurrentTask(74) - Error while retrieving the task key.
+2020-09-24 17:00:20 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-24 17:00:38 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-09-24 17:00:38 INFO  ApacheHttpClient.getFilteredTasks(333) - responseCode = 200
+2020-09-24 17:00:39 INFO  ApacheHttpClient.getTaskTemplateInfo(350) - responseCode = 200
+2020-09-24 17:00:39 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(73) - File created :C:/Users/teo_heel/JavaRushTasks/4.JavaCollections/src/com/javarush/task/task40/task4011
+2020-09-24 17:00:39 INFO  TaskInfoSelectorMouseListener.run(515) - checkpoint 1
+2020-09-24 17:00:39 INFO  TaskInfoSelectorMouseListener.run(517) - checkpoint 2
+2020-09-24 17:00:39 INFO  TaskInfoSelectorMouseListener.run(523) - checkpoint 3
+2020-09-24 17:00:39 INFO  TaskInfoSelectorMouseListener.run(515) - checkpoint 1
+2020-09-24 17:00:39 INFO  TaskInfoSelectorMouseListener.run(517) - checkpoint 2
+2020-09-24 17:00:39 INFO  TaskInfoSelectorMouseListener.run(523) - checkpoint 3
+2020-09-24 17:00:46 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-09-24 17:01:20 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-24 17:01:55 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-09-24 17:01:56 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2020-09-24 17:02:18 INFO  ProjectStartupHandler.projectClosing(154) - ---------- Project closed ----------
+
+2020-09-24 17:02:18 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2020-09-24 17:02:18 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2020-09-24 17:02:18 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2020-09-24 17:03:12 INFO  ProjectStartupHandler.runActivity(73) - ---------- Project opened ----------
+2020-09-24 17:03:12 INFO  ProjectStartupHandler.runActivity(74) - ---------- Version 3.43 ----------
+
+2020-09-24 17:03:13 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(594) - Waiting for server response.
+2020-09-24 17:03:13 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(594) - Waiting for server response.
+2020-09-24 17:03:13 INFO  ApacheHttpClient.refreshUserInfo(302) - responseCode = 200
+2020-09-24 17:03:13 INFO  ApacheHttpClient.refreshUserInfo(308) - User information received.
+2020-09-24 17:03:13 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2020-09-24 17:03:13 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2020-09-24 17:03:15 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-09-24 17:03:15 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2020-09-24 17:03:21 INFO  ApacheHttpClient.completed(28) - responseCode = 200
+2020-09-24 17:03:21 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
