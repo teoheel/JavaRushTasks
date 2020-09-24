@@ -1,6 +1,5 @@
 package com.javarush.task.task40.task4011;
 
-import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -9,7 +8,7 @@ import java.net.URL;
 */
 
 public class Solution {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         decodeURLString("https://www.amrood.com/index.htm?language=en#j2se");
     }
 
