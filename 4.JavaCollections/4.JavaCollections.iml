@@ -25,5 +25,6 @@
     <orderEntry type="library" name="junit:junit:4.12" level="project" />
     <orderEntry type="library" name="org.jsoup:jsoup:1.9.2" level="project" />
     <orderEntry type="module" module-name="1.JavaSyntax" />
+    <orderEntry type="module" module-name="3.JavaMultithreading" />
   </component>
 </module>
