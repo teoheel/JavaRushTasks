@@ -27,5 +27,6 @@
     <orderEntry type="module" module-name="1.JavaSyntax" />
     <orderEntry type="module" module-name="3.JavaMultithreading" />
     <orderEntry type="library" name="org.apache.httpcomponents:httpclient:4.5.12" level="project" />
+    <orderEntry type="library" name="javax.mail:mail:1.4.7" level="project" />
   </component>
 </module>
