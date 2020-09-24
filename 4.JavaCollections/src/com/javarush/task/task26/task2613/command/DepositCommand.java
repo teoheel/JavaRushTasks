@@ -13,7 +13,7 @@ import static com.javarush.task.task26.task2613.ConsoleHelper.writeMessage;
 
 
 class DepositCommand implements Command {
-    private ResourceBundle res = ResourceBundle.getBundle(CashMachine.class.getPackage().getName() + ".resources.deposit");
+    private final ResourceBundle res = ResourceBundle.getBundle(CashMachine.RESOURCE_PATH + "deposit");
 
     @Override
     public void execute() throws InterruptOperationException {

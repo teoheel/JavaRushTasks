@@ -13,7 +13,7 @@ import java.util.ResourceBundle;
 import static com.javarush.task.task26.task2613.ConsoleHelper.*;
 
 class WithdrawCommand implements Command {
-    private ResourceBundle res = ResourceBundle.getBundle(CashMachine.class.getPackage().getName() + ".resources.withdraw");
+    private final ResourceBundle res = ResourceBundle.getBundle(CashMachine.RESOURCE_PATH + "withdraw");
 
     @Override
     public void execute() throws InterruptOperationException {

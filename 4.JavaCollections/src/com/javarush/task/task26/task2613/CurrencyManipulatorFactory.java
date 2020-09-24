@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CurrencyManipulatorFactory {
-    private static Map<String, CurrencyManipulator> map = new HashMap<>();
+    private static final Map<String, CurrencyManipulator> map = new HashMap<>();
 
     private CurrencyManipulatorFactory() {
     }

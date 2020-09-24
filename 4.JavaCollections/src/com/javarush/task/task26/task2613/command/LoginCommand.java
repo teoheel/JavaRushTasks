@@ -10,8 +10,8 @@ import static com.javarush.task.task26.task2613.ConsoleHelper.readString;
 import static com.javarush.task.task26.task2613.ConsoleHelper.writeMessage;
 
 class LoginCommand implements Command {
-    private ResourceBundle validCreditCards = ResourceBundle.getBundle(CashMachine.class.getPackage().getName() + ".resources.verifiedCards");
-    private ResourceBundle res = ResourceBundle.getBundle(CashMachine.class.getPackage().getName() + ".resources.login");
+    private final ResourceBundle validCreditCards = ResourceBundle.getBundle(CashMachine.RESOURCE_PATH + "verifiedCards");
+    private final ResourceBundle res = ResourceBundle.getBundle(CashMachine.RESOURCE_PATH + "login");
 
 
     @Override

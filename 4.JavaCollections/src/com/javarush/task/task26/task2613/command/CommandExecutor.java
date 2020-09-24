@@ -21,7 +21,7 @@ public class CommandExecutor {
     private CommandExecutor() {
     }
 
-    public static final void execute(Operation operation) throws InterruptOperationException {
+    public static void execute(Operation operation) throws InterruptOperationException {
         allKnownCommandsMap.get(operation).execute();
     }
 }
