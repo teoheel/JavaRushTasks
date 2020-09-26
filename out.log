@@ -2581,3 +2581,20 @@
 2020-09-26 13:29:22 INFO  ApacheHttpClient.refreshUserInfo(308) - User information received.
 2020-09-26 13:29:22 INFO  ApacheHttpClient.startGA(35) - GAService started.
 2020-09-26 13:29:22 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2020-09-26 13:31:44 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-09-26 13:32:22 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-26 13:33:22 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-26 13:34:22 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-26 13:35:14 INFO  ProjectStartupHandler.projectClosing(154) - ---------- Project closed ----------
+
+2020-09-26 13:35:14 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2020-09-26 13:35:14 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2020-09-26 13:35:33 INFO  ProjectStartupHandler.runActivity(73) - ---------- Project opened ----------
+2020-09-26 13:35:33 INFO  ProjectStartupHandler.runActivity(74) - ---------- Version 3.43 ----------
+
+2020-09-26 13:35:34 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(594) - Waiting for server response.
+2020-09-26 13:35:34 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(594) - Waiting for server response.
+2020-09-26 13:35:34 INFO  ApacheHttpClient.refreshUserInfo(302) - responseCode = 200
+2020-09-26 13:35:34 INFO  ApacheHttpClient.refreshUserInfo(308) - User information received.
+2020-09-26 13:35:34 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2020-09-26 13:35:34 INFO  AbstractRestApiClient.startService(71) - EventsService started.
