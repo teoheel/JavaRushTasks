@@ -2949,3 +2949,5 @@
 2020-09-28 21:25:44 WARN  ApacheHttpClient.checkTaskTemplateErrorCode(80) - (super) : The task is not available.
 2020-09-28 21:25:44 ERROR CorrectSolutionButton.actionPerformed(68) - Error while getting correct solution from server
 2020-09-28 21:26:42 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-28 21:27:42 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-28 21:28:42 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
