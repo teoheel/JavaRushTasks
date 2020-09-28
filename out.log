@@ -2811,3 +2811,57 @@
 2020-09-28 18:30:17 INFO  ApacheHttpClient.startGA(35) - GAService started.
 2020-09-28 18:30:17 INFO  AbstractRestApiClient.startService(71) - EventsService started.
 2020-09-28 18:31:17 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-28 18:32:11 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-09-28 18:32:11 INFO  ApacheHttpClient.getFilteredTasks(333) - responseCode = 200
+2020-09-28 18:32:13 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-09-28 18:32:14 WARN  ApacheHttpClient.checkTaskTemplateErrorCode(80) - (super) : The task is not available.
+2020-09-28 18:32:14 ERROR CorrectSolutionButton.actionPerformed(68) - Error while getting correct solution from server
+2020-09-28 18:32:17 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-28 18:32:19 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-09-28 18:32:19 WARN  ApacheHttpClient.checkTaskTemplateErrorCode(80) - (super) : The task is not available.
+2020-09-28 18:32:19 ERROR CorrectSolutionButton.actionPerformed(68) - Error while getting correct solution from server
+2020-09-28 18:33:17 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-28 18:34:17 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-28 18:35:17 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-28 18:36:17 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-28 18:37:12 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-09-28 18:37:13 WARN  ApacheHttpClient.checkTaskTemplateErrorCode(80) - (super) : The task is not available.
+2020-09-28 18:37:13 ERROR CorrectSolutionButton.actionPerformed(68) - Error while getting correct solution from server
+2020-09-28 18:37:17 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-28 18:37:17 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-28 18:37:43 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-09-28 18:37:43 WARN  ApacheHttpClient.checkTaskTemplateErrorCode(80) - (super) : The task is not available.
+2020-09-28 18:37:43 ERROR CorrectSolutionButton.actionPerformed(68) - Error while getting correct solution from server
+2020-09-28 18:38:17 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-28 18:38:17 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-28 18:39:17 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-28 18:39:17 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-28 18:39:36 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2020-09-28 18:39:53 INFO  ProjectStartupHandler.projectClosing(154) - ---------- Project closed ----------
+
+2020-09-28 18:39:53 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2020-09-28 18:39:53 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2020-09-28 18:41:08 INFO  ProjectStartupHandler.runActivity(73) - ---------- Project opened ----------
+2020-09-28 18:41:08 INFO  ProjectStartupHandler.runActivity(74) - ---------- Version 3.43 ----------
+
+2020-09-28 18:41:08 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(594) - Waiting for server response.
+2020-09-28 18:41:08 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(594) - Waiting for server response.
+2020-09-28 18:41:08 INFO  ApacheHttpClient.refreshUserInfo(302) - responseCode = 200
+2020-09-28 18:41:08 INFO  ApacheHttpClient.refreshUserInfo(308) - User information received.
+2020-09-28 18:41:08 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2020-09-28 18:41:08 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2020-09-28 18:41:11 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-09-28 18:41:11 WARN  ApacheHttpClient.checkTaskTemplateErrorCode(80) - (super) : The task is not available.
+2020-09-28 18:41:11 ERROR CorrectSolutionButton.actionPerformed(68) - Error while getting correct solution from server
+2020-09-28 18:41:50 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-09-28 18:41:55 INFO  ApacheHttpClient.completed(28) - responseCode = 400
+2020-09-28 18:41:55 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2020-09-28 18:41:55 WARN  TaskCompleted.run(69) - You already completed this task: "На вход подается строка - математическое выражение."
+2020-09-28 18:42:04 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-09-28 18:42:04 WARN  ApacheHttpClient.checkTaskTemplateErrorCode(80) - (super) : The task is not available.
+2020-09-28 18:42:04 ERROR CorrectSolutionButton.actionPerformed(68) - Error while getting correct solution from server
+2020-09-28 18:42:07 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-09-28 18:42:07 WARN  ApacheHttpClient.checkTaskTemplateErrorCode(80) - (super) : The task is not available.
+2020-09-28 18:42:07 ERROR CorrectSolutionButton.actionPerformed(68) - Error while getting correct solution from server
+2020-09-28 18:42:08 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-28 18:42:08 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
