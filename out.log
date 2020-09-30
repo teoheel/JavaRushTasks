@@ -3008,3 +3008,18 @@
 2020-09-30 07:38:12 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
 2020-09-30 07:38:13 WARN  ApacheHttpClient.checkTaskTemplateErrorCode(80) - (super) : The task is not available.
 2020-09-30 07:38:13 ERROR CorrectSolutionButton.actionPerformed(68) - Error while getting correct solution from server
+2020-09-30 07:39:09 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-30 07:39:12 INFO  ProjectStartupHandler.projectClosing(154) - ---------- Project closed ----------
+
+2020-09-30 07:39:12 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2020-09-30 07:39:12 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2020-09-30 07:42:47 INFO  ProjectStartupHandler.runActivity(73) - ---------- Project opened ----------
+2020-09-30 07:42:47 INFO  ProjectStartupHandler.runActivity(74) - ---------- Version 3.43 ----------
+
+2020-09-30 07:42:47 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(594) - Waiting for server response.
+2020-09-30 07:42:48 INFO  ApacheHttpClient.refreshUserInfo(302) - responseCode = 200
+2020-09-30 07:42:48 INFO  ApacheHttpClient.refreshUserInfo(308) - User information received.
+2020-09-30 07:42:48 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2020-09-30 07:42:48 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2020-09-30 07:43:48 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-09-30 07:44:48 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
