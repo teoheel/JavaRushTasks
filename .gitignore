@@ -12,6 +12,7 @@ target/
 *.info
 *.properties
 *.jar
+*-log
 
 /out/
 JavaRushPlugin.properties
