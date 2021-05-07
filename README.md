@@ -1,0 +1,2 @@
+# JavaRushTasks
+Project for JavaRush
