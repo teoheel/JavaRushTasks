@@ -68,9 +68,9 @@ public class ZipFileManager {
                 Files.createDirectories(outputFolder);
 
             // Проходимся по содержимому zip потока (файла)
-            ZipEntry zipEntry = zipInputStream.getNextEntry();
+            ZipEntry zipEntry;
 
-            while (zipEntry != null) {
+            while ((zipEntry = zipInputStream.getNextEntry()) != null) {
                 String fileName = zipEntry.getName();
                 Path fileFullName = outputFolder.resolve(fileName);
 
@@ -82,7 +82,6 @@ public class ZipFileManager {
                 try (OutputStream outputStream = Files.newOutputStream(fileFullName)) {
                     copyData(zipInputStream, outputStream);
                 }
-                zipEntry = zipInputStream.getNextEntry();
             }
         }
     }
